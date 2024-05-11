@@ -83,10 +83,36 @@ def pos_neg(a, b, negative):
   else:
     return True
 ```
-
-
-
-
+#not_string
+```
+def not_string(str):
+    notstr  = str[0:3]
+    if notstr == 'not':
+        return str
+    else:
+        return "not "+str
+```
+# missing_char
+```
+def missing_char(str, n):
+  return str.replace(str[n:n+1],"")
+```
+# front_back
+```
+def front_back(str):
+  if len(str) <2:
+    return str
+  elif len(str) == 2:
+    return str[::-1]
+  else:
+    first = str[0]
+    last = str[len(str)-1]
+    str_list = list(str)
+    str_list[0] = last
+    str_list[len(str)-1] = first
+    output = "".join(str_list)
+    return output
+```
 # front3
 Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.
 ```
