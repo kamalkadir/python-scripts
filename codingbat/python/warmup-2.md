@@ -21,3 +21,13 @@ def string_bits(str):
     i+=2
   return output
 ```
+# string_splosion
+```
+def string_splosion(str):
+  output = ""
+  i = 0
+  while i <= len(str):
+    output = output+str[0:i]
+    i+=1
+  return output
+```
